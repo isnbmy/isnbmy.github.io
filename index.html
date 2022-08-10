@@ -1,10 +1,35 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.bundle.min.js"></script>
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>isnbmy的个人主页</title>
+        <script>
+            function note(){
+                window.open("https://github.com/isnbmy/notepad4");
+            }
+        </script>
     </head>
     <body>
         <h1>在这里，你可以下载我的所有项目</h1>
+        <br>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>未开发完成项目代码</th>
+                    <th>已开发完成项目代码</th>
+                    <th>内测项目代码</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th><button type="button" class="btn btn-dark" onclick="note()">notepad4</button></th>
+                    <th>无</th>
+                    <th>无</th>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
