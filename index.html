@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="icon"type="img/icon.ico">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <script src="js/bootstrap.bundle.min.js"></script>
 <html lang="en">
@@ -9,6 +10,9 @@
         <script>
             function note(){
                 window.open("https://github.com/isnbmy/notepad4");
+            }
+            function downlan(){
+                window.open("download/language.exe");
             }
         </script>
     </head>
@@ -25,9 +29,9 @@
             </thead>
             <tbody>
                 <tr>
-                    <th><button type="button" class="btn btn-dark" onclick="note()">notepad4</button></th>
-                    <th>无</th>
-                    <th>无</th>
+                    <th><button type="button" class="btn btn-light" onclick="note()">notepad4</button></th>
+                    <th><button type="button" class="btn btn-primary" onclick="downlan()">超级翻译工具</button></th>
+                    <th><button class="btn btn-warning" type="button" onclick="alert('这是内测软件，需登录特定网站')">easytk</button></th>
                 </tr>
             </tbody>
         </table>
