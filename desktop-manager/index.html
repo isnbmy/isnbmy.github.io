@@ -1,12 +1,21 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.bundle.min.js"></script>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>desktop manager官网</title>
-		<script src="script.js"></script>
-	</head>
-	<body>
-		<h1>desktop manager官网</h1>
-		<button onclick="window.open('download/index.html')">下载</button>
-	</body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>desktop-manager</title>
+    </head>
+    <body>
+        <h1>良机无限</h1>
+        <button class="btn btn-outline-success" data-bs-toggle="download1" title="目前还处于测试版" onclick="window.open('download.zip')">马上下载最新版</button>
+        <br><button class="btn btn-outline-danger" onclick="window.open('https://github.com/isnbmy/desktop-manager/tree/betapreview')">&nbsp;定位到GitHub&nbsp;</button>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="download1"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    </body>
 </html>
